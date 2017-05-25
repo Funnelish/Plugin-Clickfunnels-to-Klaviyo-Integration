@@ -1,16 +1,19 @@
+/*\\\\\\\\\\\\\\\\\\\\\\\\--YaYo--///////////////////////////
+ * \\      Copyright (c) Yassine Y. (Funnelish.com)       //
+ *  \\               All Rights Reserved.                //
+ *   \\\\\\\\\\\\\\\\\\\\----<>----///////////////////////
+ *==========================================================
+ * 	FILE         :  /Funnelish/cf-to-klaviyo-plugin.js
+ * 	AUTHOR       :  Yassine Y.
+ * 	DESCRIPTION  : 	
+ *
+ * 	UPDATES      :
+ *           _CREATED : May 12, 2017  _By : Yassine Y.
+ *           _CHANGED : May 17, 2017  _By : Yassine Y.
+ */
+
 var LIST_ID = "Q5KHAH";
 var API_KEY = "pk_062326770f82ba8c3a1eb6d3f48f7dfbb0";
-
-/*
-$phone_number phone number
-$title title at their business or organization
-$organization business or organization they belong to
-$city city they live in
-$region region or state they live in
-$country country they live in
-$zip postal code where they live
-$image url to a photo of the person
-*/
 
 function send_to_klaviyo() {
   var email="", fname="", lname="", phone="", city="", state="", country="", zip="";
