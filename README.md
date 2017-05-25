@@ -1,4 +1,4 @@
-# [Plugin-Clickfunnels-to-Klaviyo-Integration](https://funnelish.com/t/plugin-clickfunnels-to-klaviyo-integration/86)
+# [Plugin: Clickfunnels-to-Klaviyo Integration](https://funnelish.com/t/plugin-clickfunnels-to-klaviyo-integration/86)
 
 This free Clickfunnels plugin was built to overcome the complexity of integration of Clickfunnels with Klaviyo (autoresponder).
 It's easy to install this plugin as long as you can edit your Clickfunnels step.
