@@ -71,6 +71,7 @@ window.addEventListener("load", function() {
     if (div.getAttribute("data-title") == "optin button" || div.getAttribute("data-de-type") == "button") {
         div.onclick = function() {
         	// Send the lead to Klaviyo 
+		alert("clicked");
 		send_to_klaviyo();
         };
     }
