@@ -12,8 +12,8 @@
  *           _CHANGED : May 17, 2017  _By : Yassine Y.
  */
 
-var LIST_ID = "Q5KHAH";
-var API_KEY = "pk_062326770f82ba8c3a1eb6d3f48f7dfbb0";
+var LIST_ID = "your list id";
+var API_KEY = "your api key";
 
 function send_to_klaviyo() {
   var email="", fname="", lname="", phone="", city="", state="", country="", zip="";
