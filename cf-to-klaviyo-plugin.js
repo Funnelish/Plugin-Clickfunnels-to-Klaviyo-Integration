@@ -63,7 +63,7 @@ function send_to_klaviyo() {
     });
 }
 
-window.onload = function() {
+window.addEventListener("load", function() {
   var divs = document.getElementsByTagName("div");
   for (i = 0; i < divs.length; i++)
   {
@@ -75,4 +75,4 @@ window.onload = function() {
         };
     }
   }
-};
+});
