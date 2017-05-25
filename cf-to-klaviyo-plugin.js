@@ -61,4 +61,18 @@ function send_to_klaviyo() {
     function(data,status){
        // alert
     });
+}
+
+window.onload = function() {
+  var divs = document.getElementsByTagName("div");
+  for (i = 0; i < divs.length; i++)
+  {
+    var div = divs[i];
+    if (div.getAttribute("data-title") == "optin button" && div.getAttribute("data-de-type") == "button") {
+        div.onclick	= function() {
+          // Send the lead to Klaviyo 
+			    send_to_klaviyo();
+        };
+    }
+  }
 };
