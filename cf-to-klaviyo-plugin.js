@@ -9,7 +9,7 @@
  *
  * 	UPDATES      :
  *           _CREATED : May 24, 2017  _By : Yassine Y.
- *           _CHANGED : May 25, 2017  _By : Yassine Y.
+ *           _CHANGED : May 26, 2017  _By : Yassine Y.
  */
 
 function send_to_klaviyo() {
@@ -52,7 +52,7 @@ function send_to_klaviyo() {
     {
       api_key: API_KEY,
       email: email,
-      properties: '{ "$first_name" : fname, "$last_name" : lname, "$city" : city, "$zip" : zip, "$country" : country, "$region" : state, "$phone_number" : phone}',
+      properties: '{ "$first_name" : "'+fname+'", "$last_name" : "'+lname+'", "$city" : "'+city+'", "$zip" : "'+zip+'", "$country" : "'+country+'", "$region" : "'+state+'", "$phone_number" : "'+phone+'"}',
       confirm_optin: false
     },
     function(data,status){
