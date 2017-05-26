@@ -12,9 +12,6 @@
  *           _CHANGED : May 25, 2017  _By : Yassine Y.
  */
 
-var LIST_ID = "your list id";
-var API_KEY = "your api key";
-
 function send_to_klaviyo() {
   var email="", fname="", lname="", phone="", city="", state="", country="", zip="";
   
