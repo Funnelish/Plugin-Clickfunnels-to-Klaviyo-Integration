@@ -48,16 +48,22 @@ function send_to_klaviyo() {
   if (zipbox != null)
     zip = zipbox.value;
 
-    $.post("https://a.klaviyo.com/api/v1/list/"+LIST_ID+"/members",
-    {
-      api_key: API_KEY,
-      email: email,
-      properties: '{ "$first_name" : "'+fname+'", "$last_name" : "'+lname+'", "$city" : "'+city+'", "$zip" : "'+zip+'", "$country" : "'+country+'", "$region" : "'+state+'", "$phone_number" : "'+phone+'"}',
-      confirm_optin: false
-    },
-    function(data,status){
-       // alert
-    });
+  var properties = {
+    g: LIST_ID,
+    "email": email,
+    "$fields": "city,state,country,zip",
+    "$first_name": fname,
+    "$last_name": lname,
+    "state": state,
+    "city": city,
+    "country": country,
+    "zip":zip,
+    "$phone":phone
+  };
+
+  $.post("https://manage.kmail-lists.com/ajax/subscriptions/subscribe",properties).done(function(d){
+    console.log("subscription success..!");
+  });
 }
 
 window.addEventListener("load", function() {
