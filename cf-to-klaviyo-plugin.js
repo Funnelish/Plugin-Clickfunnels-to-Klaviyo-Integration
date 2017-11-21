@@ -58,7 +58,7 @@ function send_to_klaviyo() {
     "city": city,
     "country": country,
     "zip":zip,
-    "$phone":phone
+    "phone":phone
   };
 
   $.post("https://manage.kmail-lists.com/ajax/subscriptions/subscribe",properties).done(function(d){
